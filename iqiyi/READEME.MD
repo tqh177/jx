@@ -11,7 +11,7 @@ webpack src/index.js -o dist/iqiyi.min.js
  * @param {String} callback 回调函数，默认为Q，回调函数必须为全局函数
  * @param {String} vid tvid的扩展，暂可不输入
  */
-function iqiyi(tvid: number, callback: string, vid: string)=>string;
+function iqiyi(tvid: number, callback: string, vid: string):string;
 ```
 ### 示例
 见[demo.html](demo.html)
