@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demo</title>
+    <script src="./dist/iqiyi.min.js"></script>
+</head>
+<body>
+    <input placeholder="请输入iqiyi视频tvid" type="text">
+    <button onclick="jx()">解析</button>
+    视频信息地址为：<a target="_blank" href="#" id="href"></a>
+    <script>
+        var a = document.getElementsByTagName("a")[0];
+        function jx(){
+            // iqiyi参数见src/iqiyi.js
+            var url = iqiyi(document.getElementsByTagName("input")[0].value);
+            a.innerText = url;
+            a.href = url;
+        }
+    </script>
+</body>
+</html>
